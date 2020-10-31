@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+        margin:0;
+        }
+        nav{
+            z-index:5;
+            width:100%;
+            font-size:13px;
+        }
+        
+        nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:#aad1d9;
+        }
+
+        nav li{
+            float:left;
+            width: 33%;
+        }
+
+        nav li a {
+            display:block;
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            text-decoration: none
+        }
+
+        nav li a:hover{
+            background-color: green;
+        }	
+
+        input[type=text]{
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+        
+        .konten{
+            background-color: rgb(122, 203, 206);
+            width: 800px;
+            margin: 40px auto 0;
+            overflow: hidden;
+
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        div {
+            border-radius: 0px;
+            background-color: #f2f2f2;
+            padding:10px;
+        }
+    </style>
+
+<head>
+    <title>Form PPDB 2020</title>
+</head>
+
+<body style="background-color:#F3F1EC">
+
+    <nav>
+        <div>
+        <h1>
+        <ul>
+            <li><a href="../praktikum4/form1-login.html">Login</a></li>
+            <li><a href="../praktikum4/form2-contact.html">Contact</a></li>
+            <li><a href="../praktikum4/form3-register.html">Register</a></li>
+        </ul>
+        </h1>
+        </div>
+    </nav>
+    <br>
+
+    <h1><font size="4" font face="Arial"><center>FORMULIR PPDB JALUR ZONASI TAHUN 2020</center></font></h1>
+    <div class="konten">
+    <fieldset>
+        <legend align="center">INFO PENDAFTARAN</legend>
+    <div>
+        <form action="form.php" method="POST">
+            <label>NISN</label>
+            <input type="text" name="name" placeholder=""/>
+            
+            <label>Asal Sekolah</label>
+            <input type="text" name="name" placeholder=""/>
+        
+            <label>Tahun Lulus</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <td><font color="red"><i>(lampirkan foto copy Ijazah)</i></font></td><br>
+            <input type="file" name="gambar">
+        </form>
+    </div>
+    </fieldset>
+
+    <br>
+    <fieldset>
+        <legend align="center">DATA CALON PESERTA</legend>
+    <div>
+        <form action="form.php" method="POST">
+            <label>Nama Lengkap</label>
+            <input type="text" name="name" placeholder=""/>
+                
+            <label>NIK</label>
+            <input type="text" name="name" placeholder=""/>
+            
+            <label>Tempat Lahir</label>
+            <input type="text" name="name" placeholder=""/>
+                
+            <label>Tanggal Lahir</label><br>
+            <input type="date" name="tanggal"/>
+            <br></br>
+
+            <p>
+                <label><font color="red"><i>(lampirkan foto copy Akte Kelahiran)</font></i></label><br>
+                <input type="file" name="gambar">
+            </p>
+            <br>
+
+            <label>Umur</label><br>
+            <input type="number" min="10" max="90" name="umur"/>
+            <br></br>
+
+            <p>
+                <label>Jenis Kelamin:</label><br>
+                <label><input type="radio" name="jenis kelamin" value="laki-laki"/>Laki-laki</label>
+                <label><input type="radio" name="jenis kelamin" value="perempuan"/>Perempuan</label>
+            </p>
+            <br>
+
+            <label>Alamat</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>Desa/Kelurahan</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>Kecamatan</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>Kabupaten</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>Provinsi</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>E-mail aktif</label><br>
+            <input type="email" name="email" placeholder=""/>
+        </form>
+    </div>
+    </fieldset>
+
+    <br>
+    <fieldset>
+        <legend align="center">DATA ORANG TUA</legend>
+    <div>
+        <form action="form.php" method="POST">
+            <label>Nomor Kartu Keluarga</label>
+            <input type="text" name="name" placeholder=""/>
+                
+            <label>Nama Ayah Kandung</label>
+            <input type="text" name="name" placeholder=""/>
+            
+            <p>
+            <label>Agama:</label><br>
+                <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+            </p>
+            <br>
+
+            <label>Pekerjaan</label>
+            <input type="text" name="name" placeholder=""/>
+    
+            <label>Nama Ibu Kandung</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <p>
+            <label>Agama:</label><br>
+                <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+            </select>
+            </p>
+            <br>
+
+            <label>Pekerjaan</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>Alamat Orang Tua</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>Desa/Kelurahan</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>Kecamatan</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>Kabupaten</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <label>Provinsi</label>
+            <input type="text" name="name" placeholder=""/>
+
+            <p>
+                <input type="submit" name="submit" value="Submit"/>
+            </p>
+        </form>
+    </div>
+    </fieldset>
+    </div>
+</body>
+
+</html>
